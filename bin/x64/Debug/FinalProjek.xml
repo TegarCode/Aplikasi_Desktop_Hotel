@@ -1,0 +1,166 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FinalProjek
+</name>
+</assembly>
+<members>
+<member name="T:FinalProjek.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources._1402008417">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources._20140822_164451_angkringan_jacira">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources._3f9470b34a8e3f526dbdb022f9f19cf7">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources._5a3761a6a5f842_1709260415135789186798">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.contact_g222dd81fe_640">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.kisspng_financial_transaction_download_vector_credit_card_transactions_5a891ad9ec0e38_5271295115189347459669">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.kisspng_programmer_computer_programming_clip_art_admin_clipart_5b4ab080015921_3370205415316215040055">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.kisspng_property_management_real_estate_renting_landlord_landlords_5aeabae4b28a96_4004735715253327087313">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.Screenshot_2022_08_03_021517">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.transparent_business_administration_icon_cms_icon_computer_ico_6025a3be739910_1818165516130794864735">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.transparent_info_icon_law_and_justice_icon_computer_icon_60cc3a438aeac4_651105781623996995569">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.transparent_info_icon_law_and_justice_icon_computer_icon_60cc3a438aeac41">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.transparent_profits_icon_sales_icon_graph_icon_604216146b3dd1_8806067716149437644393">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.wan_alyasa_hotel_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjek.My.Resources.Resources.WhatsApp_Image_2022_12_26_at_21_34_51">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:FinalProjek.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FinalProjek.DataSet1.TBLTRANSAKSIKUDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FinalProjek.DataSet1.TBLTRANSAKSIKURow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FinalProjek.DataSet1.TBLTRANSAKSIKURowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FinalProjek.DataSet1TableAdapters.TBLTRANSAKSIKUTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FinalProjek.DataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FinalProjek.DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(FinalProjek.DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FinalProjek.DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(FinalProjek.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FinalProjek.DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(FinalProjek.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FinalProjek.DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FinalProjek.DataSet1TableAdapters.TableAdapterManager.UpdateAll(FinalProjek.DataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FinalProjek.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FinalProjek.DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

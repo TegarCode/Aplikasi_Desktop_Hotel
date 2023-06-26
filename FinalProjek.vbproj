@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C2A81B4-95A4-47D5-B007-DAC3319F2AB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FinalProjek.My.MyApplication</StartupObject>
+    <RootNamespace>FinalProjek</RootNamespace>
+    <AssemblyName>FinalProjek</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FinalProjek.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FinalProjek.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>FinalProjek.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>FinalProjek.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport10.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport10.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport11.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport9.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport9.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanPendapatan.Designer.vb">
+      <DependentUpon>LaporanPendapatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanPendapatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalPemilik.Designer.vb">
+      <DependentUpon>HalPemilik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HalPemilik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ketersediaan.Designer.vb">
+      <DependentUpon>Ketersediaan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ketersediaan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanMember.Designer.vb">
+      <DependentUpon>LaporanMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_kamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_kamar.Designer.vb">
+      <DependentUpon>Master_kamar.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIN.Designer.vb">
+      <DependentUpon>CheckIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanUtama.Designer.vb">
+      <DependentUpon>HalamanUtama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesanKamar.Designer.vb">
+      <DependentUpon>PesanKamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PesanKamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanTransaksi.Designer.vb">
+      <DependentUpon>LaporanTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kwitansi.Designer.vb">
+      <DependentUpon>Kwitansi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kwitansi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahKamar.Designer.vb">
+      <DependentUpon>UbahKamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UbahKamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HapusKamar.Designer.vb">
+      <DependentUpon>HapusKamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HapusKamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters_member.Designer.vb">
+      <DependentUpon>Masters_member.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Masters_member.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HapusMember.Designer.vb">
+      <DependentUpon>HapusMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HapusMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanAdmin.Designer.vb">
+      <DependentUpon>HalamanAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahMember.Designer.vb">
+      <DependentUpon>UbahMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UbahMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\CrystalReport4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\CrystalReport5.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\CrystalReport6.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\CrystalReport8.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReport10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport10.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport11.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport9.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanPendapatan.resx">
+      <DependentUpon>LaporanPendapatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ketersediaan.resx">
+      <DependentUpon>Ketersediaan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanMember.resx">
+      <DependentUpon>LaporanMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalPemilik.resx">
+      <DependentUpon>HalPemilik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_kamar.resx">
+      <DependentUpon>Master_kamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckIN.resx">
+      <DependentUpon>CheckIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanUtama.resx">
+      <DependentUpon>HalamanUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesanKamar.resx">
+      <DependentUpon>PesanKamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanTransaksi.resx">
+      <DependentUpon>LaporanTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kwitansi.resx">
+      <DependentUpon>Kwitansi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahKamar.resx">
+      <DependentUpon>UbahKamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HapusKamar.resx">
+      <DependentUpon>HapusKamar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters_member.resx">
+      <DependentUpon>Masters_member.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HapusMember.resx">
+      <DependentUpon>HapusMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanAdmin.resx">
+      <DependentUpon>HalamanAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahMember.resx">
+      <DependentUpon>UbahMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\CrystalReport5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport5.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\CrystalReport6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport6.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\CrystalReport8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport8.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-08-03 021517.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140822_164451_angkringan-jacira.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402008417.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wan-alyasa-hotel-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3f9470b34a8e3f526dbdb022f9f19cf7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-12-26 at 21.34.51.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-info-icon-law-and-justice-icon-computer-icon-60cc3a438aeac4.651105781623996995569.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a3761a6a5f842.1709260415135789186798.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-profits-icon-sales-icon-graph-icon-604216146b3dd1.8806067716149437644393.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-financial-transaction-download-vector-credit-card-transactions-5a891ad9ec0e38.5271295115189347459669.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-business-administration-icon-cms-icon-computer-ico-6025a3be739910.1818165516130794864735.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-info-icon-law-and-justice-icon-computer-icon-60cc3a438aeac4.6511057816239969955691.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact-g222dd81fe_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-programmer-computer-programming-clip-art-admin-clipart-5b4ab080015921.3370205415316215040055.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-property-management-real-estate-renting-landlord-landlords-5aeabae4b28a96.4004735715253327087313.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
